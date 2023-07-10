@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #252525;
+    --secondary-color: #e5e5e5;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.time {
+    font-size: 48px;
+    color: var(--primary-color);
+}
+.toggle {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    border: none;
+    margin-top: 2rem;
+}
+html.dark {
+    --primary-color: #e5e5e5; 
+    --secondary-color: #252525;
+}
+html.dark {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+html{
+    transition: all 0.5s ease-in;
+}
